@@ -23,8 +23,8 @@ class Block {
 
     let nonce = 0;
     do {
-      nonce++;// increasing the nounce jab tk target reach nhi hota hai
-      timestamp = Date.now(); //00cdef ,00....jab target reach hoga ussi timestamp pr block create hoga
+      nonce++;
+      timestamp = Date.now(); 
       difficulty = Block.adjustDifficulty({
         originalBlock: prevBlock,
         timestamp,
